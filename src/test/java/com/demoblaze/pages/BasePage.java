@@ -8,8 +8,8 @@ import org.openqa.selenium.support.PageFactory;
 import java.util.List;
 
 public abstract class BasePage {
-    public BasePage() {
-        PageFactory.initElements(Driver.get(), this);
+    public BasePage(){
+        PageFactory.initElements(Driver.get(),this);
     }
 
 
@@ -20,4 +20,5 @@ public abstract class BasePage {
 
     @FindBy(css = ".hrefch")
     public List<WebElement> products;
+
 }
